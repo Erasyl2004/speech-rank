@@ -168,15 +168,40 @@ export default function LandingPage (){
                     </div>
                </div>
           </span>
-          <div className="flex items-center pt-6 justify-center lg:hidden">
-                    <div className="">
-                        <text className="font-mono text-[#222222] text-xl md: font-bold">Speech</text>
-                        <text className="font-mono text-[#4169E1] text-xl md: font-bold">Rank</text>
-                        <img className="inline reletived pl-1 pb-1 pr-24" src="/smale.png"></img>
+          <div className="flex flex-wrap items-center pt-6 justify-center lg:hidden">
+                    <div className="flex items-center justify-center space-x-60">
+                         <div className="flex items-center space-x-2">
+                              <div>
+                                   <text className="font-mono text-[#222222] text-4xl md: font-bold">Speech</text>
+                                   <text className="font-mono text-[#4169E1] text-4xl md: font-bold">Rank</text>
+                              </div>
+                              <img className="inline reletived" src="/lole.png"></img>
+                         </div>
+                         <div className="">
+                              <button className="font-mono text-[#FFFFFF] text-2xl font-semibold bg-[#4169E1] rounded-lg text-center h-16 w-56">Sign up</button>
+                         </div>
+                    </div> 
+                    <div className="w-full pt-16">
+                         <div className="flex justify-center">
+                              <img src="/fon7.png" className=""/>
+                         </div>
                     </div>
-                    <div className="">
-                        <button className="font-mono text-[#FFFFFF] font-semibold bg-[#4169E1] rounded-md text-center h-8 w-24">Sign up</button>
-                    </div>  
+                    <div className="space-y-12 pt-16">
+                         <div className="flex justify-center w-full">
+                              <p className="font-mono whitespace-normal text-6xl md: font-bold">
+                                   <span className="text-[#222222]">Get an estimate<br/>of </span>
+                                   <span className="text-[#4169E1]">your call </span>
+                                   <span className="text-[#222222]">with<br/>a client.</span>
+                              </p>
+                         </div>
+                         <div className="flex justify-center w-full">
+                              <p className="text-[#666666] text-xl">This application will help you to make technical<br/>examination and analysis according to the rules<br/>of your calls.</p>
+                         </div>
+                         <div className="flex justify-center w-full">
+                              <button className="font-mono font-medium text-[#4169E1] text-lg text-center border rounded border-[#4169E1] w-36 h-12">Try Now</button>
+                         </div>
+                    </div>
+
           </div>
        </>
     )
