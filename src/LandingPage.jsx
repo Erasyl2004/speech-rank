@@ -181,12 +181,12 @@ export default function LandingPage (){
                               <button className="font-mono text-[#FFFFFF] text-2xl font-semibold bg-[#4169E1] rounded-lg text-center h-16 w-56">Sign up</button>
                          </div>
                     </div> 
-                    <div className="w-full pt-16">
+                    <div className="w-full pt-24">
                          <div className="flex justify-center">
                               <img src="/fon7.png" className=""/>
                          </div>
                     </div>
-                    <div className="space-y-12 pt-16">
+                    <div className="space-y-16 pt-24">
                          <div className="flex justify-center w-full">
                               <p className="font-mono whitespace-normal text-6xl md: font-bold">
                                    <span className="text-[#222222]">Get an estimate<br/>of </span>
@@ -195,12 +195,51 @@ export default function LandingPage (){
                               </p>
                          </div>
                          <div className="flex justify-center w-full">
-                              <p className="text-[#666666] text-xl">This application will help you to make technical<br/>examination and analysis according to the rules<br/>of your calls.</p>
+                              <p className="text-[#666666] text-2xl">This application will help you to make technical<br/>examination and analysis according to the rules<br/>of your calls.</p>
                          </div>
                          <div className="flex justify-center w-full">
-                              <button className="font-mono font-medium text-[#4169E1] text-lg text-center border rounded border-[#4169E1] w-36 h-12">Try Now</button>
+                              <button className="font-mono font-medium text-white text-lg bg-[#4169E1] text-center rounded-lg w-36 h-12">Try Now</button>
                          </div>
                     </div>
+                    <div className="w-full pt-24" >
+                              <div className="bg-[#F7F9FB] drop-shadow-lg rounded-2xl w-[69rem] h-[20rem] flex justify-center flex-wrap">
+                                   <div className="w-full font-mono text-2xl md: font-bold text-left flex justify-center">
+                                        <div className="pt-4">
+                                             <p className="text-[#222222]">What technologies do<br/></p>
+                                             <p className="text-[#4169E1]">we use for your calls?</p>
+                                        </div>
+                                   </div>
+                              <div className="space-x-8 flex justify-center flex-wrap">
+                                        <div className="font-mono bg-[#FFFFFF] w-[21rem] h-[10rem] rounded-2xl drop-shadow-lg md: font-bold">
+                                                  <div className="flex justify-center pt-2 items-center space-x-4">
+                                                       <div className="rounded-full w-[2.5rem] h-[2.5rem] bg-[#4169E1] flex items-center justify-center">
+                                                            <p  className="text-white font-mono font-bold text-3xl">1</p>
+                                                       </div>
+                                                       <p className="text-[#222222] text-center text-xl ">Voice recognition</p>
+                                                  </div>
+                                                  <p className="text-[#666666] pt-4 text-center">With the help of AI, we determine<br/>people by the timbre of the voice</p>
+                                        </div>
+                                             <div className="font-mono bg-[#FFFFFF] w-[21rem] h-[10rem] rounded-2xl drop-shadow-lg md: font-bold">
+                                                  <div className="flex justify-center pt-2 items-center space-x-4">
+                                                       <div className="rounded-full w-[2.5rem] h-[2.5rem] bg-[#4169E1] flex items-center justify-center">
+                                                            <p  className="text-white font-mono font-bold text-3xl">2</p>
+                                                       </div>
+                                                       <p className="text-[#222222] text-center text-xl ">Reglament</p>
+                                                  </div>
+                                                  <p className="text-[#666666] pt-4 text-center">We use the regulations of advanced organizations to evaluate the work of a manager</p>
+                                             </div>
+                                             <div className="font-mono bg-[#FFFFFF] w-[21rem] h-[10rem] rounded-2xl drop-shadow-lg md: font-bold">
+                                                  <div className="flex justify-center pt-2 items-center space-x-4">
+                                                       <div className="rounded-full w-[2.5rem] h-[2.5rem] bg-[#4169E1] flex items-center justify-center">
+                                                            <p  className="text-white font-mono font-bold text-3xl">3</p>
+                                                       </div>
+                                                       <p className="text-[#222222] text-center text-xl ">VectorDB</p>
+                                                  </div>
+                                                  <p className="text-[#666666] pt-4 text-center">We use a vector database to identify technical errors</p>
+                                             </div>
+                                   </div>
+                              </div>
+                         </div>
 
           </div>
        </>
