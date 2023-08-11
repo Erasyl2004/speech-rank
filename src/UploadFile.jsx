@@ -25,6 +25,8 @@ export default function UploadFile () {
         setSelectedChapter(3)
     }
     const connectToBackendSpeech = async () => {
+       if(selectedFile)
+       {
         setIsAnalyze(true)
         console.log('start to connect.......')
         try {
@@ -50,6 +52,7 @@ export default function UploadFile () {
         } catch (error) {
           console.error(error);
         }
+       }
     }
     const connectToBackendAnalysis = async () => {
         console.log("starting analysis!!!")
@@ -59,7 +62,7 @@ export default function UploadFile () {
             id_of_speech: String(speechId)
           };
           console.log(payload_rg);
-          const analysis_by_reglament = await axios.post('http://localhost:8000/audio/reglament_analysis',payload_rg);
+          const analysis_by_reglament = await axios.post('https://fastapi-z1zk.onrender.com/audio/reglament_analysis',payload_rg);
           console.log('analysis by reglament is ready');
           setReglamentAnalysis(analysis_by_reglament.data.reglament_analysis); 
           console.log(analysis_by_reglament.data.reglament_analysis);
@@ -70,7 +73,7 @@ export default function UploadFile () {
             id_of_speech: String(speechId)
           };
           console.log(payload_th);
-          const technical_analysis = await axios.post('http://localhost:8000/audio/technical_analysis',payload_th);
+          const technical_analysis = await axios.post('https://fastapi-z1zk.onrender.com/audio/technical_analysis',payload_th);
           console.log('technical_analysis is ready'); 
           setTechnicalAnalysis(technical_analysis.data.technical_analysis);
           console.log(technical_analysis.data.technical_analysis);
